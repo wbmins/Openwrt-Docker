@@ -56,8 +56,9 @@ docker container restart openwrt
 
 6、上述配置重启后失效，如果需要可以写一个脚本开机自启设置
 
-7、参考: [macvlan网络模式下容器与宿主机互通](https://rehtt.com/index.php/archives/236/)
-
+7、参考
+  - [macvlan网络模式下容器与宿主机互通](https://rehtt.com/index.php/archives/236/)
+  - [Docker 部署的 openWrt 软路由, 并解决无法与宿主机通信问题](https://www.treesir.pub/post/n1-docker)
 
 ## 鸣谢
 - [OpenWrt-Docker](https://github.com/SuLingGG/OpenWrt-Docker)
