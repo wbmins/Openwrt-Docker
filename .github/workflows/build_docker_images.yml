@@ -6,7 +6,7 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: Actions OpenWrt Docker Images
+name: Docker Images
 
 env:
   PREFIX_URL: https://downloads.immortalwrt.org/releases/24.10.1/targets/
