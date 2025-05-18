@@ -1,4 +1,5 @@
-## [DockerHub 镜像](https://hub.docker.com/r/wbmins/openwrt) ![status](https://github.com/wbmins/ImmortalWrt-Docker/actions/workflows/Actions%20OpenWrt%20Docker%20Images.yml/badge.svg)
+[![Docker Images](https://github.com/wbmins/ImmortalWrt-Docker/actions/workflows/build_docker_images.yml/badge.svg)](https://github.com/wbmins/ImmortalWrt-Docker/actions/workflows/build_docker_images.yml)
+[![Docker Pulls](https://img.shields.io/docker/pulls/wbmins/openwrt.svg?label=Docker%20Pulls&logo=docker&color=orange)](https://hub.docker.com/r/wbmins/openwrt)
 ## 使用方法
 1、打开网卡混杂模式，其中enp1s0根据ifconfig命令找到自己的本地网卡名称替换
 ```
