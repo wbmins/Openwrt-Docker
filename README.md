@@ -1,6 +1,8 @@
 [![Docker Images](https://github.com/wbmins/ImmortalWrt-Docker/actions/workflows/build_docker_images.yml/badge.svg)](https://github.com/wbmins/ImmortalWrt-Docker/actions/workflows/build_docker_images.yml)
 [![Docker Pulls](https://img.shields.io/docker/pulls/wbmins/openwrt.svg?label=Docker%20Pulls&logo=docker&color=orange)](https://hub.docker.com/r/wbmins/openwrt)
-## 使用方法
+<details>
+   <summary>使用方法</summary>
+  
 1、打开网卡混杂模式，其中enp1s0根据ifconfig命令找到自己的本地网卡名称替换
 ```
 sudo ip link set enp1s0 promisc on
@@ -39,8 +41,11 @@ vi /etc/config/network
 ```
 docker container restart openwrt
 ```
+</details>
 
-## 其他 docker 容器如何使用代理
+<details>
+   <summary>容器代理</summary>
+
 |名字|	ip	|接口|
 | ----------- | ----------- |----------- |
 |宿主机|	192.168.1.4|	enp1s0|
@@ -61,11 +66,15 @@ docker container restart openwrt
 7、参考
   - [macvlan网络模式下容器与宿主机互通](https://rehtt.com/index.php/archives/236/)
   - [Docker 部署的 openWrt 软路由, 并解决无法与宿主机通信问题](https://www.treesir.pub/post/n1-docker)
+</details>
 
-## 鸣谢
+<details>
+   <summary>特别鸣谢</summary>
+
 - [OpenWrt-Docker](https://github.com/SuLingGG/OpenWrt-Docker)
 - [SuLingGG/OpenWrt-Docker](https://github.com/SuLingGG/OpenWrt-Docker)
 - [ImmortalWrt OpenWrt Source](https://github.com/immortalwrt/immortalwrt)
 - [P3TERX/Actions-OpenWrt](https://github.com/P3TERX/Actions-OpenWrt)
 - [OpenWrt Source Repository](https://github.com/openwrt/openwrt)
 - [Lean's OpenWrt source](https://github.com/coolsnowwolf/lede)
+</details>
