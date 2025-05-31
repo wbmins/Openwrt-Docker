@@ -7,6 +7,6 @@
 #=================================================
 
 # Set default theme to luci-theme-argon
-uci set luci.main.mediaurlbase='/luci-static/argon'
+#uci set luci.main.mediaurlbase='/luci-static/argon'
 
-exit 0
+#exit 0
