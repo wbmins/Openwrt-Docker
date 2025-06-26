@@ -9,8 +9,8 @@
 name: Docker Images
 
 env:
-  PREFIX_URL: https://downloads.immortalwrt.org/releases/24.10.1/targets/
-  DEVICE_VERSION: 24.10.1
+  PREFIX_URL: https://downloads.immortalwrt.org/releases/24.10.2/targets/
+  DEVICE_VERSION: 24.10.2
 
 on:
   workflow_dispatch:
