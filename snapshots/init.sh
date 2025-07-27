@@ -1,4 +1,4 @@
-mkdir -p /var/lock
+mkdir -p /var/log
 
 # Disable IPv6
 /etc/init.d/odhcpd disable
@@ -10,16 +10,14 @@ cat /usr/share/vim/vimrc | tee /usr/share/vim/defaults.vim
 # Add alias command
 cat <<EOF | tee -a /etc/profile
 alias la='lsd -lah'
-alias ua="opkg update && opkg list-upgradable | cut -f 1 -d ' ' | xargs -r opkg upgrade"
 EOF
 
 # Install nikki
 wget -O - https://github.com/nikkinikki-org/OpenWrt-nikki/raw/refs/heads/main/feed.sh | ash
-opkg update
-opkg install luci-i18n-nikki-zh-cn
+apk add luci-i18n-nikki-zh-cn
 
 # Change tuna feeds
-sed -i 's_https\?://downloads.openwrt.org_https://mirrors.tuna.tsinghua.edu.cn/openwrt_' /etc/opkg/distfeeds.conf
+sed -i 's_https\?://downloads.openwrt.org_https://mirrors.ustc.edu.cn/openwrt_' /etc/apk/repositories.d/distfeeds.list
 
 # Clean up temporary files
 find /tmp /var -type f ! -name 'resolv.conf' -exec rm -f {} +
